@@ -1,0 +1,38 @@
+export const topics11 = [
+  {
+    id: "heap-sort",
+    name: "Heap Sort",
+    questions: [
+      { id: 1, q: "Heap sort is based on which data structure?", o: ["Binary Search Tree", "Binary Heap", "Hash Table", "Stack"], a: 1 },
+      { id: 2, q: "What are the two main phases of the Heap Sort algorithm?", o: ["Divide and Merge", "Partition and Recursion", "Build Heap and Extract Max/Min", "Insert and Delete"], a: 2 },
+      { id: 3, q: "To sort an array in ascending order using Heap Sort, which type of heap should be constructed?", o: ["Min-Heap", "Max-Heap", "Fibonacci Heap", "Binomial Heap"], a: 1 },
+      { id: 4, q: "What is the time complexity of the 'Build Heap' phase from an unsorted array of n elements?", o: ["O(1)", "O(log n)", "O(n)", "O(n log n)"], a: 2 },
+      { id: 5, q: "What is the overall time complexity of Heap Sort in worst, average, and best cases?", o: ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"], a: 1 },
+      { id: 6, q: "What is the auxiliary space complexity of an in-place Heap Sort?", o: ["O(n)", "O(log n)", "O(1)", "O(n log n)"], a: 2 },
+      { id: 7, q: "Is Heap Sort an in-place sorting algorithm?", o: ["Yes", "No", "Depends on implementation", "Only for min-heaps"], a: 0 },
+      { id: 8, q: "Is standard Heap Sort a stable sorting algorithm?", o: ["Yes", "No", "Depends on the data", "Only for distinct elements"], a: 1 },
+      { id: 9, q: "In a zero-indexed array representation of a binary heap, where is the left child of node `i` located?", o: ["2 * i", "2 * i + 1", "2 * i + 2", "i / 2"], a: 1 },
+      { id: 10, q: "In a zero-indexed array representation of a binary heap, where is the right child of node `i` located?", o: ["2 * i", "2 * i + 1", "2 * i + 2", "(2 * i) + 3"], a: 2 },
+      { id: 11, q: "In a zero-indexed array representation of a binary heap, where is the parent of node `i` located (integer division)?", o: ["(i - 1) / 2", "i / 2", "(i + 1) / 2", "i - 2"], a: 0 },
+      { id: 12, q: "What is the operation `heapify` (or `sift-down`) responsible for?", o: ["Adding a new element at the end", "Restoring the heap property downwards from a given node", "Building the initial heap", "Sorting the array"], a: 1 },
+      { id: 13, q: "During the 'Extract' phase of sorting in ascending order with a Max-Heap, what happens in each step?", o: ["The root (max) is swapped with the last element of the heap, heap size is reduced, and new root is heapified", "The root is deleted and array shifted", "The minimum element is extracted", "The heap is rebuilt entirely"], a: 0 },
+      { id: 14, q: "In the 'Build Heap' phase using standard bottom-up approach, from which index do we start calling `heapify`?", o: ["0", "n - 1", "n / 2 - 1", "1"], a: 2 },
+      { id: 15, q: "Why do we start building the heap from index `n/2 - 1` backwards to 0?", o: ["Nodes from `n/2` to `n-1` are leaves and already form valid heaps of size 1", "It reduces time complexity from O(n log n) to O(n)", "It's required for stable sorting", "Both A and B"], a: 3 },
+      { id: 16, q: "Compared to Quick Sort, what is the main advantage of Heap Sort?", o: ["It is usually faster in practice", "It is stable", "It has a guaranteed worst-case O(n log n) time complexity", "It uses D&C approach"], a: 2 },
+      { id: 17, q: "Compared to Merge Sort, what is the main advantage of Heap Sort?", o: ["It has better time complexity", "It is stable", "It uses O(1) auxiliary space (in-place)", "It is easier to implement linked lists"], a: 2 },
+      { id: 18, q: "Why is Quick Sort often preferred over Heap Sort in practice for arrays despite Heap Sort's better worst-case complexity?", o: ["Quick Sort has better cache locality and smaller constant factors", "Heap Sort is too complex to write", "Quick Sort is stable", "Heap Sort uses too much space"], a: 0 },
+      { id: 19, q: "Which variant of Heap Sort aims to reduce the number of key comparisons by sifting a path of maximum children down to a leaf first?", o: ["Ternary Heap Sort", "Bottom-up Heap Sort", "Smoothsort", "Introsort"], a: 1 },
+      { id: 20, q: "If you want to find the k largest elements in an unsorted array of size n, how can a heap be useful?", o: ["Build a Max-Heap of size n and extract k times (Time: O(n + k log n))", "Maintain a Min-Heap of size k while iterating through the array (Time: O(n log k))", "Both A and B are valid efficient approaches", "Heaps cannot solve this efficiently"], a: 2 },
+      { id: 21, q: "Introsort is a hybrid sorting algorithm that begins with Quick Sort and switches to which algorithm when the recursion depth exceeds a level based on the logarithm of the number of elements being sorted?", o: ["Insertion Sort", "Merge Sort", "Heap Sort", "Bubble Sort"], a: 2 },
+      { id: 22, q: "In a Max-Heap, the root element is always:", o: ["The minimum element", "The maximum element", "The median element", "The average element"], a: 1 },
+      { id: 23, q: "What is the time complexity of the `heapify` operation on a node at height h?", o: ["O(1)", "O(h)", "O(n)", "O(log h)"], a: 1 },
+      { id: 24, q: "During Heap Sort, the array is conceptually divided into two parts. What are they?", o: ["Sorted part and Unsorted part", "Heap region and Sorted region", "Left half and Right half", "Evens and Odds"], a: 1 },
+      { id: 25, q: "As Heap Sort progresses, the size of the heap region:", o: ["Increases", "Decreases", "Stays the same", "Fluctuates"], a: 1 },
+      { id: 26, q: "Smoothsort is a variation of Heap Sort that has what advantage?", o: ["It is stable", "It operates in O(n) time if the array is already mostly sorted", "It uses O(n) space", "It uses Fibonacci numbers"], a: 1 },
+      { id: 27, q: "Can a Binary Search Tree be used to perform sorting in O(n log n) time?", o: ["Yes, insert all elements then perform Inorder traversal (Tree Sort)", "No, insertion is O(1)", "Yes, but space is O(1)", "No, traversal is O(n^2)"], a: 0 },
+      { id: 28, q: "When swapping the root with the last element in the heap region during Heap Sort, which properties of the heap might be violated?", o: ["Complete binary tree property", "Heap ordering property at the new root", "Both A and B", "Neither"], a: 1 },
+      { id: 29, q: "What defines a 'shape property' of a binary heap?", o: ["It must be a complete binary tree", "Parent is greater than children", "It must be balanced", "Nodes must be in sorted order"], a: 0 },
+      { id: 30, q: "What defines the 'heap property' (for a max-heap)?", o: ["It must be a complete binary tree", "A parent node is at least as large as its children", "Leaves are sorted", "Left child is smaller than right child"], a: 1 },
+    ]
+  }
+];
